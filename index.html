@@ -373,11 +373,13 @@
             </p>
             <span class="time" style="display:inline-block;background:var(--bg-light);color:var(--primary);padding:0.2rem 0.6rem;border-radius:999px;font-size:0.75rem;font-weight:600">2 giờ trước</span>
             <form class="form-stack" style="margin-top:1rem" onsubmit="return false;">
-              <input type="text" placeholder="Tên ngân hàng / dịch vụ" autocomplete="organization" />
-              <input type="text" placeholder="Ghi chú nội dung nghi vấn" />
-              <p class="form-note">Thông tin được dùng để cảnh báo ẩn danh cho cộng đồng; không hiển thị công khai họ tên người gửi.</p>
-              <button type="button" class="btn btn-dark">Gửi cảnh báo ▶</button>
-            </form>
+               <input type="text" placeholder="Tên ngân hàng / dịch vụ" autocomplete="organization" />
+               <input type="text" placeholder="Ghi chú nội dung nghi vấn" />
+               <input type="file" id="evidence-upload" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" style="display:none" />
+               <label for="evidence-upload" class="btn btn-outline" style="width:100%;text-align:center;cursor:pointer;margin-top:0.25rem;padding:0.4rem 0.75rem;font-size:0.875rem">📎 Tải lên tệp đính kèm</label>
+               <p class="form-note">Thông tin được dùng để cảnh báo ẩn danh cho cộng đồng; không hiển thị công khai họ tên người gửi.</p>
+               <button type="button" class="btn btn-dark">Gửi cảnh báo ▶</button>
+             </form>
           </div>
 
           <div class="panel-light">
