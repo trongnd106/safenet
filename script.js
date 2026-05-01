@@ -281,7 +281,7 @@
       if (fdSingle) {
         var fd = new FormData();
         fd.append("access_key", key);
-        fd.append("subject", "[SafeNet ULIS] Gửi cảnh báo từ landing page");
+        fd.append("subject", "[SafeNet] Gửi cảnh báo từ landing page");
         fd.append("name", "Ẩn danh · Form cảnh báo");
         fd.append("message", messageBody);
         fd.append("attachment", fdSingle);
@@ -289,7 +289,7 @@
       } else {
         sendPromise = sendWeb3Json({
           access_key: key,
-          subject: "[SafeNet ULIS] Gửi cảnh báo từ landing page",
+          subject: "[SafeNet] Gửi cảnh báo từ landing page",
           name: "Ẩn danh · Form cảnh báo",
           message: messageBody,
         });
@@ -350,7 +350,7 @@
       }
 
       var subjectLine =
-        "[SafeNet ULIS] Phản hồi: " +
+        "[SafeNet] Phản hồi: " +
         title.replace(/\s+/g, " ").slice(0, 120);
 
       var messageBody = mailTemplateFeedback(
