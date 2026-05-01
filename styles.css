@@ -102,8 +102,8 @@ a {
 .nav a {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--primary);
-  padding: 0.35rem 0;
+  /* color: var(--primary); */
+  /* padding: 0.35rem 0; */
   position: relative;
   transition: color 0.2s;
 }
