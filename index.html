@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeNet — Phòng chống lừa đảo trực tuyến cho sinh viên ULIS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" style="overflow: hidden; height: 48px;">
+        <img
+          class="brand-logo"
+          src="public/images/logo-removebg.png"
+          alt="SafeNet"
+          width="200"
+          height="48"
+        />
+        <div class="brand-text">
+          <span class="brand-tagline">Website phòng chống lừa đảo trực tuyến cho sinh viên ULIS</span>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="#top">Trang chủ</a>
+        <a href="#cam-nang">Cẩm nang an toàn</a>
+        <a href="#canh-bao">Cảnh báo lừa đảo</a>
+        <a href="#dang-ky">Đăng ký</a>
+      </nav>
+      <a href="#dang-ky" class="btn btn-accent">Đăng nhập</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-reveal">
+          <h1>
+            <span class="line1">Bảo vệ sinh viên</span>
+            <span class="line23">khỏi cạm bẫy</span>
+            <span class="line23">lừa đảo trực tuyến</span>
+          </h1>
+          <p class="hero-desc">
+            “SafeNet giúp bạn nhận diện, phòng tránh và chia sẻ các hình thức lừa đảo trên không gian mạng.
+          </p>
+          <form class="search-bar" role="search" action="#" onsubmit="return false;">
+            <input type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm trên SafeNet" />
+            <button type="submit" aria-label="Tìm kiếm">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="11" cy="11" r="7" />
+                <path d="M20 20l-4-4" />
+              </svg>
+            </button>
+          </form>
+          <div class="hero-badge">
+            <span class="num" id="stat-count">0</span> sinh viên đã được SafeNet bảo vệ
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section section-delay-1" aria-labelledby="feat-heading">
+      <div class="container">
+        <h2 id="feat-heading" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">
+          Tính năng chính
+        </h2>
+        <div class="feature-grid">
+          <article class="card feature-card">
+            <div class="feature-card-head">
+              <div class="icon-row" aria-hidden="true">🔍</div>
+              <h3>Tra cứu &amp; cảnh báo</h3>
+            </div>
+            <p>
+              Tra cứu số điện thoại, tài khoản hoặc đọc hướng dẫn xử lý khi gặp tình huống lừa đảo nhắm vào sinh viên.
+            </p>
+            <span class="hint">Không để mất tiền vì tin nhắn lạ — tra cứu trước khi chuyển khoản →</span>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-card-head">
+              <div class="icon-row" aria-hidden="true">🛡️</div>
+              <h3>Hướng dẫn phòng tránh</h3>
+            </div>
+            <p>
+              Thư viện chủ đề phòng chống lừa đảo đa dạng, ngắn gọn, hiệu quả và được cập nhật liên tục theo tình hình thực tế.
+            </p>
+            <span class="hint">Học cách nhận biết và tự bảo vệ mình khỏi các hình thức lừa đảo phổ biến →</span>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-card-head">
+              <div class="icon-row" aria-hidden="true">📢</div>
+              <h3>Chia sẻ &amp; báo cáo</h3>
+            </div>
+            <p>
+              Đăng cảnh báo nhanh chóng khi phát hiện chiêu trò mới, giúp lan tỏa thông tin và kêu gọi cộng đồng ULIS cùng ứng phó.
+            </p>
+            <span class="hint">Cập nhật các thủ đoạn lừa đảo mới nhất đang nhắm vào sinh viên →</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-section observe-in section" id="video-gioi-thieu" aria-labelledby="video-heading">
+      <div class="container">
+        <div class="video-section-layout">
+          <div class="video-section-head">
+            <div class="video-badges" aria-hidden="true">
+              <span class="video-badge">🎬</span>
+              <span class="video-badge">⏱️ Vài phút</span>
+              <span class="video-badge">✨ Dễ hiểu</span>
+            </div>
+            <h2 id="video-heading" class="section-title video-title-accent">Góc nhìn SafeNet</h2>
+            <p class="video-lead video-lead-strong">
+              Clip dưới đây được thiết kế cho sinh viên ULIS: thay vì chỉ đọc lý thuyết dài, bạn sẽ thấy các tình huống lừa đảo hay gặp được “mổ xẻ” nhanh —
+              từ tin nhắn lạ, lời hứa việc làm sáo rỗng, đến áp lực phải chuyển tiền ngay lập tức.
+            </p>
+            <p class="video-lead video-lead-muted">
+              Hãy chủ động bấm phát: mỗi lần xem lại, bạn củng cố thêm một phản xạ an toàn để bảo vệ bản thân và bạn bè trong lớp.
+            </p>
+            <ul class="video-highlights" aria-label="Bạn sẽ thấy trong video">
+              <li>
+                <span class="vh-ico" aria-hidden="true">🛡️</span>
+                <span><strong>Nhận diện điểm đỏ cờ</strong> — dấu hiệu thường gặp của lừa đảo qua điện thoại, mạng xã hội và thuê trọ.</span>
+              </li>
+              <li>
+                <span class="vh-ico" aria-hidden="true">📌</span>
+                <span><strong>Việc cần làm ngay</strong> — tạm dừng, kiểm tra nguồn, không chia sẻ OTP và cách báo tin cho cộng đồng.</span>
+              </li>
+              <li>
+                <span class="vh-ico" aria-hidden="true">💡</span>
+                <span><strong>Thói quen an toàn</strong> — cách tra cứu nhanh, lưu số khẩn và lan tỏa cảnh báo có trách nhiệm.</span>
+              </li>
+            </ul>
+            <div class="video-tip-row" aria-label="Lời nhắc nhanh">
+              <div class="video-tip"><span aria-hidden="true">🔒</span> Bảo vệ OTP</div>
+              <div class="video-tip"><span aria-hidden="true">👀</span> Kiểm kê nguồn tin</div>
+              <div class="video-tip"><span aria-hidden="true">📢</span> Báo sớm, cứu muộn</div>
+            </div>
+          </div>
+          <div class="video-panel">
+            <div class="video-wrap">
+              <div class="video-glow" aria-hidden="true"></div>
+              <video controls playsinline preload="metadata" aria-describedby="video-heading">
+                <source src="public/videos/pov.mp4" type="video/mp4" />
+                <source src="public/videos/pov.mov" type="video/quicktime" />
+                Trình duyệt của bạn không hỗ trợ phát video. Bạn có thể tải file về máy và mở bằng trình phát video.
+              </video>
+            </div>
+            <p class="video-caption">
+              <span class="video-caption-ico" aria-hidden="true">▶</span>
+              Gợi ý: bật tiếng (nếu có) và xem ở mạng ổn định để trải nghiệm rõ nhất — sau đó chia sẻ link trang SafeNet cho nhóm học của bạn.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section observe-in" id="canh-bao" aria-labelledby="scams-title">
+      <div class="container scams-layout">
+        <div>
+          <h2 id="scams-title" class="section-title">Những thủ đoạn lừa đảo phổ biến</h2>
+          <div class="scam-cards">
+            <article class="card scam-card">
+              <div class="icon-row icon-row--graphic" aria-hidden="true">
+                <img
+                  class="feature-icon-img"
+                  src="public/images/img2.png"
+                  alt=""
+                  width="1305"
+                  height="816"
+                />
+              </div>
+              <h4>Việc nhẹ lương cao</h4>
+              <ul>
+                <li>Lời mời làm việc không rõ nguồn, chỉ qua tin nhắn hoặc nhóm lạ</li>
+                <li>Yêu cầu nộp phí, mua hàng hoặc chuyển tiền trước khi nhận việc</li>
+                <li>Hứa hẹn thu nhập cao bất thường so với công việc thực tế</li>
+              </ul>
+              <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button>
+            </article>
+            <article class="card scam-card">
+              <div class="icon-row icon-row--graphic" aria-hidden="true">
+                <img
+                  class="feature-icon-img"
+                  src="public/images/img3.png"
+                  alt=""
+                  width="1305"
+                  height="816"
+                />
+              </div>
+              <h4>Lừa cọc thuê trọ</h4>
+              <ul>
+                <li>Yêu cầu chuyển tiền đặt cọc qua tài khoản cá nhân, không hợp đồng rõ ràng</li>
+                <li>Không cho xem phòng trực tiếp, chỉ gửi ảnh hoặc video</li>
+                <li>Giá thuê quá rẻ so với khu vực xung quanh</li>
+              </ul>
+              <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button>
+            </article>
+            <article class="card scam-card">
+              <div class="icon-row icon-row--graphic" aria-hidden="true">
+                <img
+                  class="feature-icon-img"
+                  src="public/images/img4.png"
+                  alt=""
+                  width="1305"
+                  height="816"
+                />
+              </div>
+              <h4>Giả danh công an</h4>
+              <ul>
+                <li>Gọi điện đe dọa, yêu cầu chuyển tiền ngay để “bảo vệ tài khoản”</li>
+                <li>Giả mạo cơ quan nhà nước, yêu cầu giữ bí mật, không được báo người thân</li>
+                <li>Hướng dẫn cài app hoặc chia sẻ mã OTP, mật khẩu</li>
+              </ul>
+              <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button>
+            </article>
+          </div>
+        </div>
+        <aside class="panel-dark" aria-labelledby="latest-alerts">
+          <h3 id="latest-alerts">🔔 CẢNH BÁO MỚI NHẤT</h3>
+          <div class="alert-item">
+            <span class="alert-dot red" aria-hidden="true"></span>
+            <div>
+              <strong>Tuyển dụng “việc nhẹ lương cao” mạo danh Công ty X</strong>
+              <p>Nhiều sinh viên nhận tin nhắn Zalo mời phỏng vấn online và yêu cầu chuyển phí.</p>
+              <span class="time">36 phút trước</span>
+            </div>
+          </div>
+          <div class="alert-item">
+            <span class="alert-dot yellow" aria-hidden="true"></span>
+            <div>
+              <strong>Cẩn trọng lừa cọc phòng trọ giả mạo chủ nhà</strong>
+              <p>Kẻ gian đăng tin giá rẻ, ép đặt cọc trước khi xem phòng tại Đống Đa.</p>
+              <span class="time">2 giờ 17 phút trước</span>
+            </div>
+          </div>
+          <div class="alert-item">
+            <span class="alert-dot blue" aria-hidden="true"></span>
+            <div>
+              <strong>Deepfake giả danh người thân để xin tiền khẩn cấp</strong>
+              <p>Gọi video ngắn giả giọng bố mẹ, nhờ chuyển tiền qua tài khoản lạ.</p>
+              <span class="time">6 giờ 32 phút trước</span>
+            </div>
+          </div>
+          <button type="button" class="btn btn-accent" style="width:100%;margin-top:0.5rem">Xem thêm ngay ▶</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section observe-in section-delay-2" id="cam-nang" style="background:var(--bg-light);padding-top:3rem;padding-bottom:3rem;margin-top:0">
+      <div class="container handbook-layout">
+        <div>
+          <div class="handbook-head">
+            <span aria-hidden="true" style="font-size:1.75rem">📚</span>
+            <h2 class="section-title" style="margin:0">Cẩm nang phòng chống lừa đảo</h2>
+          </div>
+          <div class="qa-grid">
+            <article class="card qa-card">
+              <div class="qa-letter q" aria-hidden="true">Q</div>
+              <div>
+                <h4>Nhận diện lừa đảo</h4>
+                <p>
+                  Nhận biết các dấu hiệu: giục gấp, giảm giá sốc, yêu cầu bí mật, chuyển tiền qua ví hoặc tài khoản lạ.
+                </p>
+              </div>
+            </article>
+            <article class="card qa-card">
+              <div class="qa-letter a" aria-hidden="true">A</div>
+              <div>
+                <h4>Bảo mật &amp; an toàn</h4>
+                <p>
+                  Bật xác thực hai lớp, không chia sẻ mã OTP, kiểm tra đường link trước khi đăng nhập tài khoản.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="shield-banner">
+            <svg class="shield-illus" viewBox="0 0 100 100" aria-hidden="true">
+              <defs>
+                <linearGradient id="gShield" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#f5a623" />
+                  <stop offset="100%" stop-color="#e09400" />
+                </linearGradient>
+              </defs>
+              <path d="M50 8 L18 22 v28 c0 22 14 38 32 42 18-4 32-20 32-42 V22 L50 8z" fill="url(#gShield)" stroke="#1a3c7e" stroke-width="2" />
+              <path d="M38 48 L46 56 L62 40" stroke="#1a3c7e" stroke-width="4" fill="none" stroke-linecap="round" />
+              <circle cx="68" cy="30" r="10" fill="#fef3c7" stroke="#1a3c7e" stroke-width="2" />
+              <path d="M68 26 v8 M64 30 h8" stroke="#1a3c7e" stroke-width="2" />
+            </svg>
+            <div>
+              <h4>Kiến thức là lá chắn</h4>
+              <p class="sub">Đọc cẩm nang ngắn, làm quiz và lưu checklist khi giao dịch online.</p>
+              <p class="desc">An toàn cho bạn — lan tỏa cho cộng đồng ULIS.</p>
+            </div>
+          </div>
+
+          <a href="#cam-nang" class="btn btn-accent" style="margin-bottom:1.5rem;display:inline-flex">👊 Xem thêm cẩm nang ⇒</a>
+
+          <div class="yellow-banner">
+            <div class="warn-icon" aria-hidden="true">⚠️</div>
+            <div>
+              <h5>Phát hiện — chia sẻ &amp; báo cáo</h5>
+              <p class="sub2">Lừa đảo qua số điện thoại hay tài khoản ngân hàng?</p>
+              <p class="desc2">Cảnh báo ngay để bảo vệ cộng đồng sinh viên ULIS.</p>
+            </div>
+          </div>
+
+          <div class="testimonial" data-slider>
+            <div class="testimonial-track">
+              <article class="testimonial-item is-active">
+                <div class="avatar" aria-hidden="true">TM</div>
+                <div>
+                  <div class="meta">
+                    <strong>Thanh Mai</strong> · <em>Sinh viên Khoa Anh, ULIS</em>
+                  </div>
+                  <blockquote>
+                    “Nhờ SafeNet mình đã phát hiện và tránh được lừa đảo tuyển dụng qua mạng xã hội.”
+                  </blockquote>
+                </div>
+              </article>
+              <article class="testimonial-item">
+                <div class="avatar" aria-hidden="true">HP</div>
+                <div>
+                  <div class="meta">
+                    <strong>Hải Phong</strong> · <em>Sinh viên Khoa Pháp, ULIS</em>
+                  </div>
+                  <blockquote>
+                    “Mình suýt chuyển khoản đặt cọc phòng trọ giả, nhưng tra cứu trên SafeNet nên dừng kịp.”
+                  </blockquote>
+                </div>
+              </article>
+              <article class="testimonial-item">
+                <div class="avatar" aria-hidden="true">LA</div>
+                <div>
+                  <div class="meta">
+                    <strong>Linh Anh</strong> · <em>Sinh viên Khoa Nhật, ULIS</em>
+                  </div>
+                  <blockquote>
+                    “Các checklist bảo mật rất dễ áp dụng, mình đã bật 2FA cho toàn bộ tài khoản quan trọng.”
+                  </blockquote>
+                </div>
+              </article>
+              <article class="testimonial-item">
+                <div class="avatar" aria-hidden="true">QN</div>
+                <div>
+                  <div class="meta">
+                    <strong>Quang Nam</strong> · <em>Sinh viên Khoa Trung, ULIS</em>
+                  </div>
+                  <blockquote>
+                    “Phần cảnh báo mới nhất cập nhật nhanh, giúp lớp mình tránh được kịch bản giả danh giảng viên.”
+                  </blockquote>
+                </div>
+              </article>
+            </div>
+            <div class="dots testimonial-dots" aria-label="Chuyển review">
+              <button type="button" class="dot is-active" aria-label="Review 1" aria-current="true" data-slide="0"></button>
+              <button type="button" class="dot" aria-label="Review 2" aria-current="false" data-slide="1"></button>
+              <button type="button" class="dot" aria-label="Review 3" aria-current="false" data-slide="2"></button>
+              <button type="button" class="dot" aria-label="Review 4" aria-current="false" data-slide="3"></button>
+            </div>
+          </div>
+        </div>
+
+        <aside id="dang-ky">
+          <div class="panel-light">
+            <h3>🔔 LỪA ĐẢO MỚI NHẤT</h3>
+            <p class="highlight">“Lừa đảo qua điện thoại hay tài khoản ngân hàng?”</p>
+            <p class="small-desc">
+              Kẻ gian giả mạo ngân hàng, yêu cầu cung cấp OTP hoặc chuyển tiền vào tài khoản “an toàn”.
+            </p>
+            <span class="time" style="display:inline-block;background:var(--bg-light);color:var(--primary);padding:0.2rem 0.6rem;border-radius:999px;font-size:0.75rem;font-weight:600">2 giờ trước</span>
+            <form class="form-stack" style="margin-top:1rem" onsubmit="return false;">
+              <input type="text" placeholder="Tên ngân hàng / dịch vụ" autocomplete="organization" />
+              <input type="text" placeholder="Ghi chú nội dung nghi vấn" />
+              <p class="form-note">Thông tin được dùng để cảnh báo ẩn danh cho cộng đồng; không hiển thị công khai họ tên người gửi.</p>
+              <button type="button" class="btn btn-dark">Gửi cảnh báo ▶</button>
+            </form>
+          </div>
+
+          <div class="panel-light">
+            <h3>KẾT NỐI VỚI SAFENET</h3>
+            <div class="connect-grid">
+              <div class="col">
+                <strong>Cộng đồng</strong>
+                <span>Nhóm Zalo sinh viên</span>
+                <span>Bản tin cảnh báo tuần</span>
+                <span>Góc chia sẻ kinh nghiệm</span>
+              </div>
+              <div class="col">
+                <strong>Hỗ trợ</strong>
+                <span>Email hỗ trợ</span>
+                <span>Câu hỏi thường gặp</span>
+                <span>Báo lỗi / góp ý</span>
+              </div>
+            </div>
+            <div class="social-row social-row--apps" aria-label="Mạng xã hội">
+              <a href="#" aria-label="Facebook SafeNet" class="social-app-link">
+                <span class="social-app-icon social-fb" aria-hidden="true">f</span>
+                <span>Facebook</span>
+              </a>
+              <a href="#" aria-label="Instagram SafeNet" class="social-app-link">
+                <span class="social-app-icon social-ig" aria-hidden="true">◎</span>
+                <span>Instagram</span>
+              </a>
+              <a href="#" aria-label="TikTok SafeNet" class="social-app-link">
+                <span class="social-app-icon social-tt" aria-hidden="true">♪</span>
+                <span>TikTok</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true">
+            <defs>
+              <linearGradient id="sg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#2d8fe0" />
+                <stop offset="100%" style="stop-color:#f5a623" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#sg2)" d="M24 4L8 10v14c0 11 8 18 16 20 8-2 16-9 16-20V10L24 4z" />
+            <path fill="#fff" opacity="0.92" d="M24 14c-4 0-7 2-9 5l3 2c1-2 3-3 6-3s5 1 6 3l3-2c-2-3-5-5-9-5zm-5 10h10v3H19v-3z" />
+          </svg>
+          <strong>SafeNet</strong>
+        </div>
+        <nav class="footer-links" aria-label="Liên kết chân trang">
+          <a href="#top">Trang chủ</a>
+          <a href="#cam-nang">Cẩm nang</a>
+          <a href="#canh-bao">Cảnh báo</a>
+          <a href="#dang-ky">Liên hệ</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p style="margin:0">© 2024 SafeNet ULIS. All rights reserved.</p>
+        <div class="social-row">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
