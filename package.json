@@ -1,0 +1,7 @@
+{
+  "name": "safenet-landing-page",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/inject-mail-config.js"
+  }
+}

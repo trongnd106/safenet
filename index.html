@@ -29,7 +29,7 @@
         <a href="#cam-nang">Cẩm nang an toàn</a>
         <a href="#canh-bao">Cảnh báo lừa đảo</a>
         <!-- <a href="#dang-ky">Đăng ký</a> -->
-        <a href="#dang-ky" class="btn btn-accent">Đăng ký</a>
+        <a href="#dang-ky" class="btn btn-accent">Gửi cảnh báo</a>
       </nav>
     </div>
   </header>
@@ -178,7 +178,7 @@
                 <li>Yêu cầu nộp phí, mua hàng hoặc chuyển tiền trước khi nhận việc</li>
                 <li>Hứa hẹn thu nhập cao bất thường so với công việc thực tế</li>
               </ul>
-              <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button>
+              <!-- <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button> -->
             </article>
             <article class="card scam-card">
               <div class="icon-row icon-row--graphic" aria-hidden="true">
@@ -196,7 +196,7 @@
                 <li>Không cho xem phòng trực tiếp, chỉ gửi ảnh hoặc video</li>
                 <li>Giá thuê quá rẻ so với khu vực xung quanh</li>
               </ul>
-              <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button>
+              <!-- <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button> -->
             </article>
             <article class="card scam-card">
               <div class="icon-row icon-row--graphic" aria-hidden="true">
@@ -214,7 +214,7 @@
                 <li>Giả mạo cơ quan nhà nước, yêu cầu giữ bí mật, không được báo người thân</li>
                 <li>Hướng dẫn cài app hoặc chia sẻ mã OTP, mật khẩu</li>
               </ul>
-              <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button>
+              <!-- <button type="button" class="btn btn-primary btn-sm">Chi tiết ▶</button> -->
             </article>
           </div>
         </div>
@@ -308,11 +308,14 @@
             </div>
           </div>
 
-          <div class="testimonial" data-slider>
+          <div class="testimonial" data-slider aria-labelledby="testimonial-heading">
+            <h3 id="testimonial-heading" class="testimonial-heading">Phản hồi từ sinh viên ULIS</h3>
+            <p class="testimonial-heading-desc">Chia sẻ thực tế của bạn bè trong trường — kéo sang hoặc dùng dấu chấm bên dưới để xem các ý khác nhau.</p>
             <div class="testimonial-track">
               <article class="testimonial-item is-active">
                 <div class="avatar" aria-hidden="true">TM</div>
-                <div>
+                <div class="testimonial-body">
+                  <p class="testimonial-slide-title">Tuyển dụng qua mạng</p>
                   <div class="meta">
                     <strong>Thanh Mai</strong> · <em>Sinh viên Khoa Anh, ULIS</em>
                   </div>
@@ -323,7 +326,8 @@
               </article>
               <article class="testimonial-item">
                 <div class="avatar" aria-hidden="true">HP</div>
-                <div>
+                <div class="testimonial-body">
+                  <p class="testimonial-slide-title">Lừa đảo phòng trọ</p>
                   <div class="meta">
                     <strong>Hải Phong</strong> · <em>Sinh viên Khoa Pháp, ULIS</em>
                   </div>
@@ -334,7 +338,8 @@
               </article>
               <article class="testimonial-item">
                 <div class="avatar" aria-hidden="true">LA</div>
-                <div>
+                <div class="testimonial-body">
+                  <p class="testimonial-slide-title">Hướng dẫn bảo mật thành công</p>
                   <div class="meta">
                     <strong>Linh Anh</strong> · <em>Sinh viên Khoa Nhật, ULIS</em>
                   </div>
@@ -345,7 +350,8 @@
               </article>
               <article class="testimonial-item">
                 <div class="avatar" aria-hidden="true">QN</div>
-                <div>
+                <div class="testimonial-body">
+                  <p class="testimonial-slide-title">Cảnh báo tuyệt vời</p>
                   <div class="meta">
                     <strong>Quang Nam</strong> · <em>Sinh viên Khoa Trung, ULIS</em>
                   </div>
@@ -361,24 +367,46 @@
               <button type="button" class="dot" aria-label="Review 3" aria-current="false" data-slide="2"></button>
               <button type="button" class="dot" aria-label="Review 4" aria-current="false" data-slide="3"></button>
             </div>
+            <div class="testimonial-feedback">
+              <p class="testimonial-feedback-lead">Hãy gửi phản hồi của bạn ở đây</p>
+              <form class="testimonial-feedback-form" id="form-feedback-testimonial">
+                <label class="feedback-label" for="feedback-title">Tiêu đề</label>
+                <input id="feedback-title" type="text" name="feedback_title" autocomplete="off" placeholder="Ví dụ: Góp ý về cẩm nang" />
+                <div class="feedback-inline-row">
+                  <div class="feedback-field">
+                    <label class="feedback-label" for="feedback-name">Tên của bạn</label>
+                    <input id="feedback-name" type="text" name="feedback_name" autocomplete="name" placeholder="Họ và tên" />
+                  </div>
+                  <div class="feedback-field">
+                    <label class="feedback-label" for="feedback-faculty">Khoa</label>
+                    <input id="feedback-faculty" type="text" name="feedback_faculty" autocomplete="organization" placeholder="Ví dụ: Khoa Anh" />
+                  </div>
+                </div>
+                <label class="feedback-label" for="feedback-content">Nội dung phản hồi</label>
+                <textarea id="feedback-content" name="feedback_content" rows="4" autocomplete="off" placeholder="Chi tiết phản hồi của bạn…"></textarea>
+                <button type="button" class="btn btn-outline btn-feedback" id="btn-send-feedback">Gửi phản hồi</button>
+                <p id="feedback-send-status" class="form-send-status" role="status" aria-live="polite" hidden></p>
+              </form>
+            </div>
           </div>
         </div>
 
         <aside id="dang-ky">
           <div class="panel-light">
-            <h3>🔔 LỪA ĐẢO MỚI NHẤT</h3>
+            <h3>🔔 HÃY CHIA SẺ TRƯỜNG HỢP CỦA BẠN</h3>
             <p class="highlight">“Lừa đảo qua điện thoại hay tài khoản ngân hàng?”</p>
             <p class="small-desc">
-              Kẻ gian giả mạo ngân hàng, yêu cầu cung cấp OTP hoặc chuyển tiền vào tài khoản “an toàn”.
+              Cảnh báo ngay để bảo vệ cộng đồng sinh viên ULIS!
             </p>
             <span class="time" style="display:inline-block;background:var(--bg-light);color:var(--primary);padding:0.2rem 0.6rem;border-radius:999px;font-size:0.75rem;font-weight:600">2 giờ trước</span>
-            <form class="form-stack" style="margin-top:1rem" onsubmit="return false;">
-               <input type="text" placeholder="Tên ngân hàng / dịch vụ" autocomplete="organization" />
-               <input type="text" placeholder="Ghi chú nội dung nghi vấn" />
+            <form id="form-report-canh-bao" class="form-stack" style="margin-top:1rem">
+               <input id="report-type" name="report_type" type="text" placeholder="Thông tin/hình thức lừa đảo" autocomplete="off" />
+               <input id="report-detail" name="report_detail" type="text" placeholder="Mô tả cụ thể" autocomplete="off" />
                <input type="file" id="evidence-upload" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" style="display:none" />
                <label for="evidence-upload" class="btn btn-outline" style="width:100%;text-align:center;cursor:pointer;margin-top:0.25rem;padding:0.4rem 0.75rem;font-size:0.875rem">📎 Tải lên tệp đính kèm</label>
                <p class="form-note">Thông tin được dùng để cảnh báo ẩn danh cho cộng đồng; không hiển thị công khai họ tên người gửi.</p>
-               <button type="button" class="btn btn-dark">Gửi cảnh báo ▶</button>
+               <button type="button" class="btn btn-dark" id="btn-send-report">Gửi cảnh báo ▶</button>
+               <p id="report-send-status" class="form-send-status" role="status" aria-live="polite" hidden></p>
              </form>
           </div>
 
@@ -398,19 +426,34 @@
                 <span>Báo lỗi / góp ý</span>
               </div>
             </div>
-            <div class="social-row social-row--apps" aria-label="Mạng xã hội">
-              <a href="#" aria-label="Facebook SafeNet" class="social-app-link">
-                <span class="social-app-icon social-fb" aria-hidden="true">f</span>
-                <span>Facebook</span>
-              </a>
-              <a href="#" aria-label="Instagram SafeNet" class="social-app-link">
-                <span class="social-app-icon social-ig" aria-hidden="true">◎</span>
-                <span>Instagram</span>
-              </a>
-              <a href="#" aria-label="TikTok SafeNet" class="social-app-link">
-                <span class="social-app-icon social-tt" aria-hidden="true">♪</span>
-                <span>TikTok</span>
-              </a>
+          </div>
+
+          <div class="panel-light">
+            <h3>LIÊN HỆ</h3>
+            <div class="contact-list" aria-label="Thông tin liên hệ SafeNet">
+              <div class="contact-line">
+                <span class="contact-ico" aria-hidden="true">📞</span>
+                <div class="contact-body">
+                  <!-- <span class="contact-label">Số điện thoại</span> -->
+                  <a href="tel:+849886252223" class="contact-value">0988&nbsp;625&nbsp;223</a>
+                </div>
+              </div>
+              <div class="contact-line">
+                <span class="contact-ico" aria-hidden="true" style="padding-top: 2px">✉️</span>
+                <div class="contact-body">
+                  <!-- <span class="contact-label">Email</span> -->
+                  <a href="mailto:ntminhanh236@gmail.com" class="contact-value">ntminhanh236@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-line">
+                <span class="contact-ico" aria-hidden="true">📍</span>
+                <div class="contact-body">
+                  <!-- <span class="contact-label">Địa chỉ</span> -->
+                  <p class="contact-value contact-value--multiline">
+                    Số 2 Phạm Văn Đồng, phường Cầu Giấy, thành phố Hà&nbsp;Nội
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </aside>
@@ -452,6 +495,7 @@
     </div>
   </footer>
 
+  <script src="mail-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

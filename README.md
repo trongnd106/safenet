@@ -42,6 +42,13 @@ npx --yes serve -l 8080
 - Trang ưu tiên **`public/videos/pov.mp4`** (H.264 — tương thích tốt).
 - File **`pov.mov`** chỉ là nguồn dự phòng; nhiều trình duyệt không phát HEVC trong `<video>`.
 
+## Gửi email từ form (Web3Forms)
+
+Hai nút **Gửi cảnh báo** và **Gửi phản hồi** gửi nội dung về email đã đăng ký qua [Web3Forms](https://web3forms.com).
+
+- Sao chép **`mail-config.example.js`** → **`mail-config.js`**, dán **Access Key** (xem **`EMAIL_SETUP.md`**).
+- **`mail-config.js`** nằm trong **`.gitignore`** → không có trên GitHub. Trên **Vercel**, thêm biến môi trường **`SAFENET_WEB3FORMS_ACCESS_KEY`**, rồi chạy **`npm run build`** (đã có trong `package.json`) để sinh `mail-config.js` lúc deploy — chi tiết trong **`EMAIL_SETUP.md`** (mục Deploy Vercel).
+
 ## Tùy chỉnh port
 
 Nếu cổng `8080` đang bận, đổi số cuối lệnh `python3 -m http.server` (ví dụ `8000`).
